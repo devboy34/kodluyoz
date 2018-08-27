@@ -1,0 +1,20 @@
+* {box-sizing:border-box}
+body{margin: 0px;}
+
+button{float:left;color:gray;border:none;padding:5px;margin: 0px;background-color: LightSlateGray;}
+button:hover{background-color: white;}
+
+#refreshButton{color:orange;}
+#stopButton{display:none;color:tomato;}
+#playButton{color:green;}
+#appPlayPhoneButton{color:black;}
+#codePreview{color:skyblue;}
+#codePreviewOff{color:tomato;display: none;}
+
+#groupTextAreaButton,#htmlCodeView,#cssCodeView,#jsCodeView{color:white;}
+
+.buttonArea{background-color:LightSlateGray;display:inline-block;width: 100%;}
+.codeArea{display: inline-block;width: 100%;height: 100%;}
+.codeTextArea{width:33.33%;height:100%;font-size:18px;background-color:White;color:black;margin:0px;float:left;}
+.previewer{width: 100%;height: 100%;display: none;}
+.previewArea{width: 100%;height: 100%;border: solid 1px red;display: none;}

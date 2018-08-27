@@ -1,0 +1,46 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>KODLUYOZ</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="script.js"></script>
+<link rel="stylesheet" href="stil.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+</head>
+<body>
+<!--BUTON ALANI-->
+<div class="buttonArea">
+    <button onclick=""><i class="fas fa-terminal fa-5x"></i></button>
+    <button id="playButton" onclick="appPlayAction()"><i class="fas fa-play fa-5x"></i></button>
+    <button id="stopButton" onclick="appStopAction();"><i class="fas fa-stop fa-5x"></i></button>
+    <button id="codePreview" onclick="codePreview();"><i class="fas fa-eye fa-5x"></i></button>
+    <button id="codePreviewOff" onclick="codePreviewOff();"><i class="fas fa-eye fa-5x"></i></button>
+    <button id="refreshButton" onclick="codeAreaValue();"><i class="fas fa-undo fa-5x"></i></button>
+    
+    <button id="groupTextAreaButton" onclick="groupCodeArea()"><i class="fas fa-columns fa-5x"></i></button>
+    <button id="htmlCodeView" onclick="htmlCodeAreaView()"><i class="fab fa-html5 fa-5x"></i></button>
+    <button id="cssCodeView" onclick="cssCodeAreaView()"><i class="fab fa-css3-alt fa-5x"></i></button>
+    <button id="jsCodeView" onclick="jsCodeAreaView()"><i class="fab fa-js-square fa-5x"></i></button>
+    </div>
+<div class="buttonArea">
+    
+    </div>
+<!--BUTON ALANI-->
+<!--KOD ALANI-->
+<div id="codeArea" class="codeArea">
+      <form name="codeForm" method="post">
+        <textarea id="htmlCodeArea" name="htmlCodeArea" class="codeTextArea"></textarea>
+        <textarea id="cssCodeArea" name="cssCodeArea" class="codeTextArea"></textarea>
+        <textarea id="jsCodeArea" name="jsCodeArea" class="codeTextArea"><script></script></textarea>
+      </form></div>
+      <!--KOD ALANI-->
+    
+    <!--KOD ÖNİZLEME ALANI-->
+    <div id="previewArea">
+        <iframe id="previewer" class="previewer" name="previewer"></iframe>
+    </div>
+</body>
+</html>
+<script>
+codeAreaValue();
+</script>
